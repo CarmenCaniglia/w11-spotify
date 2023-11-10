@@ -29,7 +29,7 @@ const SideBar = ({ onSearch }) => {
   return (
     <>
       <Navbar
-        className="navbar navbar-expand-md fixed-left justify-content-between"
+        className="navbar navbar-expand fixed-left justify-content-between"
         id="sidebar"
       >
         <div className="container flex-column align-items-start">
@@ -50,7 +50,7 @@ const SideBar = ({ onSearch }) => {
             id="navbarNavAltMarkup"
           >
             <Nav className="navbar-nav">
-              <ul>
+              <ul className="ps-0">
                 <li>
                   <NavLink
                     className="nav-item nav-link d-flex align-items-center"
@@ -72,7 +72,7 @@ const SideBar = ({ onSearch }) => {
                     <InputGroup className="input-group mt-3">
                       <FormControl
                         type="text"
-                        className="form-control mb-2"
+                        className="form-control "
                         id="searchField"
                         placeholder="Search"
                         aria-label="Search"
@@ -98,10 +98,10 @@ const SideBar = ({ onSearch }) => {
         </div>
 
         <div className="nav-btn">
-          <Button className="btn signup-btn" type="button">
+          <Button className=" signup-btn" type="button">
             Sign Up
           </Button>
-          <Button className="btn login-btn" type="button">
+          <Button className=" login-btn" type="button">
             Login
           </Button>
           <div>

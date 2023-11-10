@@ -6,6 +6,7 @@ import HomePage from "./Components/HomePage";
 import SearchAlbum from "./Components/SearchAlbum";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Player from "./Components/Player";
 
 function App() {
   const [searchResults, setSearchResult] = useState([]);
@@ -43,7 +44,9 @@ function App() {
               <Route path="/" element={<SearchAlbum />}></Route>
             </Routes>
           </Col>
-          <Container>{/* qui metto il player */}</Container>
+          <Container>
+            <Player />
+          </Container>
         </Row>
       </Container>
     </BrowserRouter>
